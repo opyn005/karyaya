@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+
+<!--fontawesome-->
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" 
+   integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="assets/img/favicon.png" type="image/png" />
+
+    <title>Karya Dari Desa</title>
+  </head>
+
+  <body>
+
+    <a id="button">
+      <i class="fas fa-angle-up"></i>
+    </a>
+
+    <header>
+      <nav>
+        <div class="nav__header">
+          <div class="nav__logo">
+            <a href="#" class="logo">
+              <img src="assets/img/logo.png" alt="logo" />
+              <span>PT Karya Dari Desa</span>
+            </a>
+          </div>
+          <div class="nav__menu__btn" id="menu-btn">
+            <i class="ri-menu-line"></i>
+          </div>
+        </div>
+        <ul class="nav__links" id="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#brands">Brands</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#franchise">Franchise</a></li>
+          <li>
+            <button
+              class="btn"
+              onclick="window.location.href='assets/html/contact.html';"
+            >
+              <span><i class="ri-contacts-line"></i></span>
+              Contact Us
+            </button>
+          </li>
+        </ul>
+        <div class="nav__btns">
+          <button
+            class="btn"
+            onclick="window.location.href='assets/html/contact.html';"
+          >
+            <span><i class="ri-contacts-line"></i></span>
+            Contact Us
+          </button>
+        </div>
+      </nav>
+
+<br>
+<br>
+      
+      <div class="section__container header__container" id="home">
+        <div class="header__image">
+          <img src="assets/img/header.png" alt="header" />
+        </div>
+        <div class="header__content">
+          <div class="header__tag">
+            Karya Desa Group
+            <img src="assets/img/company.png" alt="header tag" />
+          </div>
+          <h1 class="typing-text">
+            Menghadirkan Produk Berkualitas dan Halal <br />
+            <span class="auto-type"></span>
+          </h1>
+          <p class="section__description">
+            Di PT Karya Dari Desa, kami berkomitmen untuk membawa produk dan
+            layanan berkualitas tinggi dari komunitas lokal langsung ke pintu
+            Anda, dengan kecepatan dan keandalan.
+          </p>
+          <div class="header__btns">
+            <a
+              href="https://api.whatsapp.com/send?phone=6281377783334&text=Assalamualaikum.."
+              class="btn btn-primary rounded-pill px-4 py-2"
+            >
+              <i class="bi bi-whatsapp me-2"></i> whatsapp
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="section__container about__container" id="about">
+      <div class="about__image" data-tilt="">
+        <img src="assets/img/company.png" alt="about" />
+      </div>
+      <div class="about__content">
+        <p class="section__subheader">ABOUT US</p>
+        <h2 class="section__header">Tentang Kami</h2>
+        <p class="section__about">
+          PT Karya Dari Desa Group adalah perusahaan yang berdedikasi untuk
+          memberdayakan potensi lokal melalui inovasi dan kerja sama yang kuat.
+          Kami percaya bahwa desa-desa di Indonesia memiliki potensi yang besar
+          untuk tumbuh dan berkembang melalui pengelolaan sumber daya yang
+          cerdas dan berkelanjutan<span id="dots">...</span>
+          <span id="more" style="display: none"
+            ><br /><br />
+            Dengan fokus pada pembangunan ekonomi berbasis masyarakat, kami
+            bekerja sama dengan berbagai pihak untuk menciptakan lapangan kerja,
+            mempromosikan produk lokal, serta meningkatkan kualitas hidup
+            masyarakat desa. Kami hadir sebagai mitra yang terpercaya dalam
+            menciptakan perubahan positif melalui solusi inovatif yang berdampak
+            nyata bagi komunitas.
+
+            <br /><br />
+            Dengan tim yang berpengalaman dan berkomitmen, PT Karya Dari Desa
+            Group terus tumbuh untuk menjadi pemimpin dalam memajukan sektor
+            agrikultur, industri kreatif, dan pengembangan infrastruktur di
+            seluruh pelosok negeri. Kami siap bergerak maju bersama Anda, menuju
+            masa depan yang lebih cerah.
+          </span>
+        </p>
+        <button onclick="myFunction()" id="myBtn">Read more</button>
+      </div>
+    </section>
+
+    <script>
+      function myFunction() {
+        var dots = document.getElementById("dots");
+        var moreText = document.getElementById("more");
+        var btnText = document.getElementById("myBtn");
+
+        if (dots.style.display === "none") {
+          dots.style.display = "inline";
+          btnText.innerHTML = "Read more";
+          moreText.style.display = "none";
+        } else {
+          dots.style.display = "none";
+          btnText.innerHTML = "Read less";
+          moreText.style.display = "inline";
+        }
+      }
+    </script>
+
+    <section class="section__container menu__container" id="brands">
+      <p class="section__subheader">OUR BRANDS</p>
+      <h2 class="section__header">
+        Our New Brand Will Always Make You Fall In Love
+      </h2>
+
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="menu__card">
+              <img src="assets/img/brands/teh.jpg" alt="menu" />
+              <div class="menu__card__details">
+                <h4>Teh Desa</h4>
+                <a href="assets/html/teh-desa.html">
+                  Details
+                  <span><i class="ri-arrow-right-line"></i></span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="menu__card">
+              <img src="assets/img/brands/nisu.jpg" alt="menu" />
+              <div class="menu__card__details">
+                <h4>Nisu Smoothies</h4>
+                <a href="assets/html/nisu-smoothies.html">
+                  Details
+                  <span><i class="ri-arrow-right-line"></i></span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="menu__card">
+              <img src="assets/img/brands/moo.jpg" alt="menu" />
+              <div class="menu__card__details">
+                <h4>MooDessert</h4>
+                <a href="assets/html/moodessert.html">
+                  Details
+                  <span><i class="ri-arrow-right-line"></i></span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="menu__card">
+              <img src="assets/img/brands/mlaku.jpg" alt="menu" />
+              <div class="menu__card__details">
+                <h4>Mlaku Coffee</h4>
+                <a href="assets/html/mlaku-coffee.html">
+                  Details
+                  <span><i class="ri-arrow-right-line"></i></span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <br>
+    <br>
+    <br>
+
+    <section class="portfolio" id="gallery">
+      <p class="section__subheader">Our Gallery</p>
+      <h2 class="section__header">Our Gallery</h2>
+      <main class="mainContainer">
+        <!-- View All Button at the Top -->
+        <div style="text-align: center; margin-bottom: 20px">
+          <button id="viewAllButtonTop" class="view-all-btn">View All</button>
+        </div>
+
+        <!-- Buttons Section Starts -->
+        <div class="button-group">
+          <button class="button active" data-filter="*">All</button>
+          <button class="button" data-filter=".design">Company</button>
+          <button class="button" data-filter=".development">Teh Desa</button>
+          <button class="button" data-filter=".logo">Nisu Smoothies</button>
+          <button class="button" data-filter=".logo">MooDessert</button>
+          <button class="button" data-filter=".logo">Mlaku Coffee</button>
+        </div>
+        <!-- Buttons Section Ends -->
+
+        <link
+          href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css"
+          rel="stylesheet"
+        />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+        <!-- Gallery Section Starts -->
+        
+        <div class="gallery">
+          <div class="item design">
+            <a href="assets/img/tes/design1.jpg" data-lightbox="mygallery"
+              ><img src="assets/img/tes/design1.jpg" alt="Design 1"
+            /></a>
+          </div>
+
+          <div class="item design">
+            <a href="assets/img/tes/design2.jpg" data-lightbox="mygallery"
+              ><img src="assets/img/tes/design2.jpg" alt="Design 2"
+            /></a>
+          </div>
+
+          <div class="item development">
+            <a href="assets/img/tes/website1.jpg" data-lightbox="mygallery"
+              ><img src="assets/img/tes/website1.jpg" alt="Website 1"
+            /></a>
+          </div>
+
+          <div class="item development">
+            <a href="assets/img/tes/website2.jpg" data-lightbox="mygallery"
+              ><img src="assets/img/tes/website2.jpg" alt="Website 2"
+            /></a>
+          </div>
+
+          <div class="item development">
+            <a href="assets/img/tes/website3.jpg" data-lightbox="mygallery"
+              ><img src="assets/img/tes/website3.jpg" alt="Website 3"
+            /></a>
+          </div>
+
+          <div class="item logo">
+            <a href="assets/img/tes/logo1.jpg" data-lightbox="mygallery"
+              ><img src="assets/img/tes/logo1.jpg" alt="Logo 1"
+            /></a>
+          </div>
+
+          <div class="item logo">
+            <a href="assets/img/tes/logo1.jpg" data-lightbox="mygallery"
+              ><img src="assets/img/tes/logo1.jpg" alt="Logo 1"
+            /></a>
+          </div>
+
+          <div class="item logo">
+            <a href="assets/img/tes/logo1.jpg" data-lightbox="mygallery"
+              ><img src="assets/img/tes/logo1.jpg" alt="Logo 1"
+            /></a>
+          </div>
+
+          <div class="item logo">
+            <a href="assets/img/tes/logo1.jpg" data-lightbox="mygallery"
+              ><img src="assets/img/tes/logo1.jpg" alt="Logo 1"
+            /></a>
+          </div>
+
+          <div class="item logo">
+            <a href="assets/img/tes/logo1.jpg" data-lightbox="mygallery"
+              ><img src="assets/img/tes/logo1.jpg" alt="Logo 1"
+            /></a>
+          </div>
+
+          <div class="item logo">
+            <a href="assets/img/tes/logo1.jpg" data-lightbox="mygallery"
+              ><img src="assets/img/tes/logo1.jpg" alt="Logo 1"
+            /></a>
+          </div>
+
+          <div class="item development">
+            <a href="assets/img/tes/website1.jpg" data-lightbox="mygallery"
+              ><img src="assets/img/tes/website1.jpg" alt="Website 1"
+            /></a>
+          </div>
+
+          <div class="item development">
+            <a href="assets/img/tes/website1.jpg" data-lightbox="mygallery"
+              ><img src="assets/img/tes/website1.jpg" alt="Website 1"
+            /></a>
+          </div>
+
+          <div class="item development">
+            <a href="assets/img/tes/website1.jpg" data-lightbox="mygallery"
+              ><img src="assets/img/tes/website1.jpg" alt="Website 1"
+            /></a>
+          </div>
+
+          <div class="item development">
+            <a href="assets/img/header.png" data-lightbox="mygallery"
+              ><img src="assets/img/header.png" alt="Website 1"
+            /></a>
+          </div>
+
+          <div class="item development">
+            <a href="assets/img/brands/mlaku.jpg" data-lightbox="mygallery"
+              ><img src="assets/img/brands/mlaku.jpg" alt="Website 1"
+            /></a>
+          </div>
+        </div>
+        <!-- Gallery Section Ends -->
+      </main>
+    </section>
+
+    <!-- jQuery and Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        var $galleryContainer = $(".gallery").isotope({
+          itemSelector: ".item",
+          layoutMode: "fitRows",
+        });
+
+        // Filter functionality for buttons
+        $(".button-group .button").on("click", function () {
+          $(".button-group .button").removeClass("active");
+          $(this).addClass("active");
+
+          var value = $(this).attr("data-filter");
+          $galleryContainer.isotope({
+            filter: value,
+          });
+        });
+
+        // View All functionality for Lightbox (Top button)
+        $("#viewAllButtonTop").on("click", function () {
+          $(".gallery a").first().click(); // Triggers the lightbox for the first image
+        });
+
+        // View All functionality for Lightbox (Bottom button)
+        $("#viewAllButtonBottom").on("click", function () {
+          $(".gallery a").first().click(); // Triggers the lightbox for the first image
+        });
+      });
+    </script>
+
+    <footer>
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <div class="footer__logo">
+            <a href="#" class="logo">
+              <img src="assets/img/logo.png" alt="logo" />
+              <span>PT Karya Dari Desa</span>
+            </a>
+          </div>
+          <p class="section__description">
+            Membawa produk-produk terbaik dari desa, dengan komitmen pada
+            kecepatan, kualitas, dan dukungan komunitas.
+          </p>
+        </div>
+        <div class="footer__col">
+          <h4>About</h4>
+          <ul class="footer__links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#brands">Brands</a></li>
+            <li><a href="assets/html/galery.html">Gallery</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Company</h4>
+          <ul class="footer__links">
+            <p class="section__description2">
+              Jl. Raya Karangturi Desa No.RT.004/RW.001 Kec. Sumbang Kabupaten
+              Banyumas Jawa Tengah 53183
+            </p>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <ul class="footer__links">
+            <li><br /></li>
+
+            <img
+              src="assets/img/halal.png"
+              alt="Halal Logo"
+              class="footer__halal-logo"
+            />
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bar">
+        Copyright © 2024 PT Karya Dari Desa. All rights reserved.
+      </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top" id="button">
+      <i class="fas fa-arrow-up"></i>
+    </a>
+    <!-- End of Back to Top Button -->
+
+  <script type="text/javascript">
+
+    var btn = $('#button');
+
+    $(window).scroll(function () {
+      if ($(window).scrollTop() > 300) {
+        btn.addClass('show');
+      } else {
+        btn.removeClass('show');
+      }
+    });
+
+    btn.on('click', function (e) {
+      e.preventDefault();
+      $('html, body').animate({ scrollTop: 0 }, '300');
+    });
+
+  </script>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+    <script src="assets/js/tilt.js"></script>
+  </body>
+</html>
+
